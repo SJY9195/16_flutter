@@ -43,7 +43,6 @@ class _ContactsPageState extends State<ContactsPage> {
     }
   }
 
-
   // 연락처를 실제로 가져오는 메소드
   Future<void> _getContacts() async {
     try {
