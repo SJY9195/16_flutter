@@ -50,6 +50,14 @@ class _Problem extends State<Problem> {
     }
   }
 
+  Future<void> _loadLocalImage() async {
+    // assets 폴더에서 이미지 로드
+    setState(() {
+      _images.add(File('assets/sample_image.png'));
+    });
+  }
+
+
   // 이미지를 삭제할 때 확인 다이얼로그 메소드
   void _showDeleteDialog(File image) {
     showDialog(
